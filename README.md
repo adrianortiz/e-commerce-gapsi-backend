@@ -20,7 +20,7 @@ Back-end basado en Spring Boot
 * O Ejecutar desde el IDE
   - Importar como proyeto Maven y ejecutar la clase `EcommerceApplication.java`
     
-* Url base de la API `http://localhost:8081//rest/proveedor`
+* Url base de la API `http://localhost:8081/rest/proveedor`
 
 ## Imagenes del proyecto
 ![API](https://github.com/adrianortiz/e-commerce-gapsi-backend/blob/main/src/main/resources/images/img-01-backend.png)
