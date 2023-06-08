@@ -14,5 +14,6 @@ public interface IService<T> {
     List<T> saveAll(List<T> t);
     Boolean deleteById(String nombre);
     void updatedDataJson();
+    int getTotalRows();
 
 }

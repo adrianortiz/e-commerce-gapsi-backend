@@ -52,6 +52,8 @@ public class ProveedorControllerRest {
             @RequestParam(name = "size", defaultValue = "8") int size
     ) {
 
+        log.info("Proveedor - Consultar todos con Paging");
+
         Iterable<Proveedor> proveedores = proveedorIService.findAll(PageRequest.of(pagina, size));
         List<Proveedor> response = new ArrayList<>();
         // proveedores.forEach(response::add);
@@ -63,6 +65,7 @@ public class ProveedorControllerRest {
         ProveedorPaggingResponse paginado = new ProveedorPaggingResponse();
         paginado.setPagina(pagina);
         paginado.setSize(size);
+        paginado.setTotal(proveedorIService.getTotalRows());
         paginado.setProveedores(response);
 
         return new ResponseEntity<>(paginado, HttpStatus.OK);

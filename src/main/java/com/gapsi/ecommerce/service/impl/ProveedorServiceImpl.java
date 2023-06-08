@@ -88,4 +88,9 @@ public class ProveedorServiceImpl implements IService<Proveedor> {
 
         }
     }
+
+    @Override
+    public int getTotalRows() {
+        return proveedorRepository.getTotalRows();
+    }
 }

@@ -1,7 +1,7 @@
 # Gapsi - Back-end - Spring Boot
 Back-end basado en Spring Boot
 
-**Características:*
+**Características:**
 * GET API Inicio
 * CRUD API Proveedor
 
@@ -22,7 +22,12 @@ Back-end basado en Spring Boot
     
 * Url base de la API `http://localhost:8081/rest/proveedor`
 
-## Imagenes del proyecto
+## API
+* Descargar Postman e importar los archivos descriptivos de la API:
+
+    - Postman: Environment [`localhost.postman_environment.json`](https://github.com/adrianortiz/e-commerce-gapsi-backend/blob/main/src/main/resources/images/localhost.postman_environment.json)
+    - Postman: API [`API_Proveedor.postman_collection.json`](https://github.com/adrianortiz/e-commerce-gapsi-backend/blob/main/src/main/resources/images/API_Proveedor.postman_collection.json)
+
 ![API](https://github.com/adrianortiz/e-commerce-gapsi-backend/blob/main/src/main/resources/images/img-01-backend.png)
 ![API](https://github.com/adrianortiz/e-commerce-gapsi-backend/blob/main/src/main/resources/images/img-02-backend.png)
 ![API](https://github.com/adrianortiz/e-commerce-gapsi-backend/blob/main/src/main/resources/images/img-03-backend.png)

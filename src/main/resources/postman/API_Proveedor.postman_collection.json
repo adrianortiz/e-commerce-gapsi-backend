@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "b187f146-19e4-498e-8880-1e52aa96c17a",
+		"name": "API Proveedor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1895201",
+		"_collection_link": "https://www.postman.com/codizer/workspace/e-commerce-gapsi-backend/collection/1895201-b187f146-19e4-498e-8880-1e52aa96c17a?action=share&creator=1895201&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Proveedor",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/rest/proveedor",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"proveedor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll paging",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/rest/proveedor/paginado?pagina=0&size=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"proveedor",
+								"paginado"
+							],
+							"query": [
+								{
+									"key": "pagina",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/rest/proveedor/sony",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"proveedor",
+								"sony"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Empresa 1\",\n    \"razon\": \"Adrian Ortiz\",\n    \"direccion\": \"Estado de México\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/rest/proveedor",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"proveedor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/rest/proveedor/manzana",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"proveedor",
+								"manzana"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inicio",
+			"item": [
+				{
+					"name": "inicio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/rest/inicio",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"inicio"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

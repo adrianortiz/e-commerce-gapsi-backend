@@ -1,0 +1,27 @@
+[
+  {
+    "nombre": "Maquinaria",
+    "razon": "Adrian Ortiz",
+    "direccion": "CDMX, México"
+  },
+  {
+    "nombre": "Sony",
+    "razon": "Jorge Mendoza",
+    "direccion": "Edo. de México, México"
+  },
+  {
+    "nombre": "Samsung",
+    "razon": "Karen Olvera",
+    "direccion": "Santa Fe, México"
+  },
+  {
+    "nombre": "Apple",
+    "razon": "Steve Jobs",
+    "direccion": "San Francisco, USA"
+  },
+  {
+    "nombre": "Amazon",
+    "razon": "Alejandro Perez",
+    "direccion": "CDMX, México"
+  }
+]
