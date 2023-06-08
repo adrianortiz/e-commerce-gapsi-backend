@@ -4,6 +4,8 @@ Back-end basado en Spring Boot
 **Características:**
 * GET API Inicio
 * CRUD API Proveedor
+* Cargar datos de Archivo JSON con CommandLineRunner
+* Generar archivo JSON y guardar los Proveedores
 
 ### Requerimientos
 * Maven
