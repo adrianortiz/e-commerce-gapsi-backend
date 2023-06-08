@@ -1,9 +1,15 @@
 # Gapsi - Back-end - Spring Boot
 Back-end basado en Spring Boot
 
+**NOTA: El Front-end lo puedes decargar de:**
+- React JS [`Proveedores Front-end`](https://github.com/adrianortiz/e-commerce-gapsi-frontend)
+
 **Características:**
 * GET API Inicio
-* CRUD API Proveedor
+* GET API Proveedor
+* POST API Proveedor
+* PUT API Proveedor
+* DELETE API Proveedor
 * Cargar datos de Archivo JSON con CommandLineRunner
 * Generar archivo JSON y guardar los Proveedores
 
