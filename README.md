@@ -25,8 +25,8 @@ Back-end basado en Spring Boot
 ## API
 * Descargar Postman e importar los archivos descriptivos de la API:
 
-    - Postman: Environment [`localhost.postman_environment.json`](https://github.com/adrianortiz/e-commerce-gapsi-backend/blob/main/src/main/resources/images/localhost.postman_environment.json)
-    - Postman: API [`API_Proveedor.postman_collection.json`](https://github.com/adrianortiz/e-commerce-gapsi-backend/blob/main/src/main/resources/images/API_Proveedor.postman_collection.json)
+    - Postman: Environment [`localhost.postman_environment.json`](https://github.com/adrianortiz/e-commerce-gapsi-backend/blob/main/src/main/resources/postman/localhost.postman_environment.json)
+    - Postman: API [`API_Proveedor.postman_collection.json`](https://github.com/adrianortiz/e-commerce-gapsi-backend/blob/main/src/main/resources/postman/API_Proveedor.postman_collection.json)
 
 ![API](https://github.com/adrianortiz/e-commerce-gapsi-backend/blob/main/src/main/resources/images/img-01-backend.png)
 ![API](https://github.com/adrianortiz/e-commerce-gapsi-backend/blob/main/src/main/resources/images/img-02-backend.png)
