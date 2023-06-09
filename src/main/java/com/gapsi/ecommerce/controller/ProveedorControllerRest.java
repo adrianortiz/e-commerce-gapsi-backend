@@ -23,6 +23,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @RestController
+@CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
 @RequestMapping("/proveedor")
 public class ProveedorControllerRest {
 
@@ -31,7 +32,6 @@ public class ProveedorControllerRest {
     @Autowired
     private IService<Proveedor> proveedorIService;
 
-    @CrossOrigin(origins = "http://localhost:5173")
     @GetMapping
     public ResponseEntity<Collection<Proveedor>> findAll() {
         log.info("Proveedor - Consultar todos");
@@ -45,7 +45,6 @@ public class ProveedorControllerRest {
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "http://localhost:5173")
     @GetMapping("/paginado")
     public ResponseEntity<ProveedorPaggingResponse> findAllPaging(
             @RequestParam(name = "pagina", defaultValue = "0") int pagina,
@@ -71,7 +70,6 @@ public class ProveedorControllerRest {
         return new ResponseEntity<>(paginado, HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "http://localhost:5173")
     @GetMapping("/{nombre}")
     public ResponseEntity<Object> findById(@PathVariable String nombre) {
         log.info("Proveedor - Buscar por id nombre");
@@ -89,7 +87,6 @@ public class ProveedorControllerRest {
     }
 
 
-    @CrossOrigin(origins = "http://localhost:5173")
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Object> save(@RequestBody @Valid Proveedor proveedor) {
         log.info("Proveedor - Guardar");
@@ -107,7 +104,6 @@ public class ProveedorControllerRest {
 
     }
 
-    @CrossOrigin(origins = "http://localhost:5173")
     @PutMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Object> update(@RequestBody @Valid Proveedor proveedor) {
         log.info("Proveedor - Actualizar");
@@ -124,7 +120,6 @@ public class ProveedorControllerRest {
         }
     }
 
-    @CrossOrigin(origins = "http://localhost:5173")
     @DeleteMapping("{nombre}")
     public ResponseEntity<Object> deleteById(@PathVariable String nombre) {
         log.info("Proveedor - Eliminar por Id Nombre");
